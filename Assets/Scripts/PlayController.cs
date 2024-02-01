@@ -57,7 +57,7 @@ public class PlayController : MonoBehaviour
     {
         ApplyLook();
     }
-        void LateUpdate()
+    void LateUpdate()
     {
         xyTarget.x = juan.transform.position.x;
         xyTarget.y = juan.transform.position.y;
@@ -73,16 +73,15 @@ public class PlayController : MonoBehaviour
     }
     void Shoot()
     {
-        int layerMask = 1 << 8;
-        layerMask = ~layerMask;
-        RaycastHit2D hit = Physics2D.Raycast(raycastObject.transform.position, fwd, 50, layerMask);
+        int layerMask1 = 1 << 8;
+        int layerMask2 = 1 << 2;
+        int finalMask = layerMask1 | layerMask2;
+        finalMask = ~finalMask;
+        RaycastHit2D hit = Physics2D.Raycast(raycastObject.transform.position, fwd, 50, finalMask);
         if (hit.collider != null)
             Debug.Log("Hit");
         else
             Debug.Log("Miss");
     }
-
     
 }
-
-
