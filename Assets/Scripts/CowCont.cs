@@ -33,8 +33,9 @@ public class CowCont : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, collision.transform.position, gravSpeed * Time.deltaTime);
         }
-        if (collision.tag == "Enemy")
-            transform.position = Vector2.MoveTowards(transform.position, collision.transform.position, -startleSpeed * Time.deltaTime);
+
     }
 
+
 }
+

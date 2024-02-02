@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public GameObject parent;
     public Transform player;
     public Rigidbody2D badManRB;
     private bool shoot = false;
-    private float speed = 1f;
-    private float pSpeed = 3;
+    private float speed = .2f;
+    private float pSpeed = .5f;
     public float PlayerDistance = 5;
     public float rotate;
-    public GameObject parent;
+    public float HP = 5;
+
 
     private void Awake()
     {
@@ -22,18 +24,18 @@ public class EnemyController : MonoBehaviour
     {
         Vector2 rot = player.position - transform.position;
         rotate = Mathf.Atan2(rot.y, rot.x) * Mathf.Rad2Deg - 90f;
-        
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Cow")
+        if (collision.tag == "Cow" && Vector2.Distance(transform.position, player.position) > PlayerDistance)
         {
-            parent.transform.position = Vector2.MoveTowards(transform.position, collision.transform.position, speed * Time.deltaTime);
+            badManRB.AddForce((collision.transform.position - transform.position) * speed);
         }
         else if (Vector2.Distance(transform.position, player.position) < PlayerDistance)
-            {
-                parent.transform.position = Vector2.MoveTowards(parent.transform.position, player.position, pSpeed * Time.deltaTime);
-                badManRB.rotation = rotate;
-            }
+        {
+            badManRB.AddForce((player.transform.position - transform.position) * pSpeed);
+            badManRB.rotation = rotate;
+        }
     }
 }
