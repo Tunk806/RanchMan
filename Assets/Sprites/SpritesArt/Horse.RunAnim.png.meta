@@ -115,9 +115,9 @@ TextureImporter:
       name: Horse.RunAnim_0
       rect:
         serializedVersion: 2
-        x: 57
+        x: 76
         y: 6
-        width: 208
+        width: 188
         height: 711
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -136,9 +136,9 @@ TextureImporter:
       name: Horse.RunAnim_1
       rect:
         serializedVersion: 2
-        x: 439
+        x: 456
         y: 15
-        width: 208
+        width: 188
         height: 691
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,9 +157,9 @@ TextureImporter:
       name: Horse.RunAnim_2
       rect:
         serializedVersion: 2
-        x: 821
+        x: 840
         y: 9
-        width: 208
+        width: 188
         height: 711
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,9 +178,9 @@ TextureImporter:
       name: Horse.RunAnim_3
       rect:
         serializedVersion: 2
-        x: 1205
+        x: 1222
         y: 4
-        width: 208
+        width: 188
         height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -199,9 +199,9 @@ TextureImporter:
       name: Horse.RunAnim_4
       rect:
         serializedVersion: 2
-        x: 1585
+        x: 1604
         y: 4
-        width: 208
+        width: 188
         height: 714
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -226,12 +226,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Horse.RunAnim_0: -8549297089932686776
-      Horse.RunAnim_1: 3727744347061194697
-      Horse.RunAnim_2: -3190957967782417773
-      Horse.RunAnim_3: 5908648556896860687
-      Horse.RunAnim_4: 8775885881524976773
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
