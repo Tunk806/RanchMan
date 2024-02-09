@@ -226,7 +226,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Horse.RunAnim_0: -8549297089932686776
+      Horse.RunAnim_1: 3727744347061194697
+      Horse.RunAnim_2: -3190957967782417773
+      Horse.RunAnim_3: 5908648556896860687
+      Horse.RunAnim_4: 8775885881524976773
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

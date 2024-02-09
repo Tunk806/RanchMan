@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Horse.idle_0: 5956000074186888075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

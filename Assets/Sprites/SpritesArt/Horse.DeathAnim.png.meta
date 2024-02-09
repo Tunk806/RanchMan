@@ -298,7 +298,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Horse.DeathAnim_0: 5035748492056775794
+      Horse.DeathAnim_1: 8820680136644618596
+      Horse.DeathAnim_2: 4653347816564611428
+      Horse.DeathAnim_3: -2575766195844093315
+      Horse.DeathAnim_4: -7234277245284434043
+      Horse.DeathAnim_5: 8133259933052165747
+      Horse.DeathAnim_6: 5037565448327893843
+      Horse.DeathAnim_7: 733079941878709279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
