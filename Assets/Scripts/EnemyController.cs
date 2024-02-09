@@ -38,8 +38,9 @@ public class EnemyController : MonoBehaviour
         }
         else if (Vector2.Distance(transform.position, player.position) < PlayerDistance)
         {
-            badManRB.AddForce((player.transform.position - transform.position) * pSpeed);
+
             badManRB.rotation = rotate;
+            badManRB.velocity = (player.transform.position - transform.position);
         }
     }
 }

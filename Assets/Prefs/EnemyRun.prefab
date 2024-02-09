@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1666839707536516779}
   - component: {fileID: 6978133413395269874}
   - component: {fileID: 4423105757961232889}
-  - component: {fileID: 5311047364089107116}
+  - component: {fileID: 5398917950829577331}
   m_Layer: 0
   m_Name: EnemyRun
   m_TagString: Enemy
@@ -103,7 +103,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -116,8 +116,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!66 &5311047364089107116
-CompositeCollider2D:
+--- !u!60 &5398917950829577331
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -151,16 +151,21 @@ CompositeCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths: []
-  m_CompositePaths:
-    m_Paths: []
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
-  m_CompositeGameObject: {fileID: 2297049735930324427}
 --- !u!1 &7798833580883918277
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,8 +247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03098b1eb5ffe474ab16a170b9ac4758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 2297049735930324427}
   player: {fileID: 0}
   badManRB: {fileID: 0}
   PlayerDistance: 5
   rotate: 0
-  parent: {fileID: 2297049735930324427}
+  HP: 5

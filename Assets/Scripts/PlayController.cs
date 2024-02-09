@@ -61,7 +61,7 @@ public class PlayController : MonoBehaviour
             Debug.DrawRay(raycastObject.transform.position, fwd * 50, Color.red, 1);
             Shoot();
         }
-        if (reload.triggered)
+        if (reload.triggered && ammo >= 6)
         {
             Reload();
         }
