@@ -7,6 +7,7 @@ TagManager:
   - Cow
   - Enemy
   - Detector
+  - EnemyTake
   layers:
   - Default
   - TransparentFX

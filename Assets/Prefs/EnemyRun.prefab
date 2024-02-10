@@ -250,6 +250,10 @@ MonoBehaviour:
   parent: {fileID: 2297049735930324427}
   player: {fileID: 0}
   badManRB: {fileID: 0}
+  thieved: 0
+  cowFab: {fileID: 1505799348393747451, guid: 1080141b8d755f644a721c46c474c79f, type: 3}
+  trigColl: {fileID: 0}
   PlayerDistance: 5
   rotate: 0
   HP: 5
+  damage: 1
