@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: e0fdbedad6f58e1448c4cb7fc64a929b
+guid: 52626a2465dd7314687854924fa5e921
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4457245924893847920
-    second: Cowboy_Only_0
+      213: -3274828415963391609
+    second: Cow3.Run_0
+  - first:
+      213: -2856540772060144244
+    second: Cow3.Run_1
+  - first:
+      213: -1977793047961621206
+    second: Cow3.Run_2
+  - first:
+      213: -6160550067875219486
+    second: Cow3.Run_3
+  - first:
+      213: 4623803734752819197
+    second: Cow3.Run_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cowboy_Only_0
+      name: Cow3.Run_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 5
-        width: 214
-        height: 384
+        x: 14
+        y: 24
+        width: 673
+        height: 1001
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +126,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09e0522627ea422c0800000000000000
-      internalID: -4457245924893847920
+      spriteID: 789952e08e87d82d0800000000000000
+      internalID: -3274828415963391609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cow3.Run_1
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 32
+        width: 673
+        height: 1001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d5fea6d478b58d0800000000000000
+      internalID: -2856540772060144244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cow3.Run_2
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 36
+        width: 673
+        height: 1001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2da201a3b77d84e0800000000000000
+      internalID: -1977793047961621206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cow3.Run_3
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 22
+        width: 673
+        height: 1001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7f94f6a54518aa0800000000000000
+      internalID: -6160550067875219486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cow3.Run_4
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 19
+        width: 673
+        height: 1001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7f011bffc0b2040800000000000000
+      internalID: 4623803734752819197
       vertices: []
       indices: 
       edges: []
