@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7451837ada7a70541b9ea0e91dfa27d0
+guid: 2250d336177b2d24ab478eb34f7f3508
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4283071122817140914
-    second: CV-Ground_0
+      213: -3295857640132603360
+    second: ammo.bullet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CV-Ground_0
+      name: ammo.bullet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4730c8a1897f84c0800000000000000
-      internalID: -4283071122817140914
+      spriteID: 02293a140f2c242d0800000000000000
+      internalID: -3295857640132603360
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      CV-Ground_0: -4283071122817140914
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
