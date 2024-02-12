@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5afe6ca2075e22145a449dd2b79074fc
+guid: e0fdbedad6f58e1448c4cb7fc64a929b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5242652201165999556
-    second: button.menuStart_0
+      213: -4457245924893847920
+    second: Cowboy_Only_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button.menuStart_0
+      name: Cowboy_Only_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 370
-        height: 240
+        x: 11
+        y: 5
+        width: 214
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c32b49c899b5e37b0800000000000000
-      internalID: -5242652201165999556
+      spriteID: 09e0522627ea422c0800000000000000
+      internalID: -4457245924893847920
       vertices: []
       indices: 
       edges: []
@@ -143,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      button.menuStart_0: -5242652201165999556
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

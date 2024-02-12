@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using Unity.VisualScripting;
 
 public class PlayController : MonoBehaviour
 {
@@ -10,29 +11,27 @@ public class PlayController : MonoBehaviour
 
     Rigidbody2D myRB;
 
-    public float turn = 3.5f;
-
+    public GameObject juan;
+    public GameObject raycastObject;
+    public EnemyController tempEC;
+    public CowCont tempCC;
     public InputAction look;
     public InputAction fire;
     public InputAction reload;
 
+    public float turn = 3.5f;
     float lookInput;
     float rotAngle;
     float cylAmmo = 6;
     float ammo = 36;
+    public float health = 1;
 
-    Vector2 inputVector;
-
-    public GameObject juan;
-    public GameObject raycastObject;
-    public EnemyController tempEC;
     private Vector3 xy;
     private Vector2 xyTarget;
+    Vector2 inputVector;
     Vector3 fwd;
+
     public TextMeshProUGUI AMMO;
-    
-
-
     private void Awake()
     {
         playInput = new PlayerInputs();
@@ -61,11 +60,14 @@ public class PlayController : MonoBehaviour
             Debug.DrawRay(raycastObject.transform.position, fwd * 50, Color.red, 1);
             Shoot();
         }
-        if (reload.triggered)
+        if (reload.triggered && ammo >= 6)
         {
             Reload();
         }
-        
+        if (juan.IsDestroyed())
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void FixedUpdate()
     {
@@ -93,13 +95,11 @@ public class PlayController : MonoBehaviour
         finalMask = ~finalMask;
         cylAmmo--;
             RaycastHit2D hit = Physics2D.Raycast(raycastObject.transform.position, fwd, 50, finalMask);
-            if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
+            if (hit.collider != null && hit.collider.gameObject.tag == "Enemy" || (hit.collider != null && hit.collider.gameObject.tag == "EnemyTake"))
             {
                 tempEC = hit.collider.gameObject.GetComponentInChildren<EnemyController>();
                 tempEC.HP--;
             }
-            else
-                Debug.Log("Miss");
     }
     void Reload()
     {
