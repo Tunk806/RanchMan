@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 52626a2465dd7314687854924fa5e921
+guid: 67c9417696696a648933b83a993d13bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3274828415963391609
-    second: Cow3.Run_0
-  - first:
-      213: -2856540772060144244
-    second: Cow3.Run_1
-  - first:
-      213: -1977793047961621206
-    second: Cow3.Run_2
-  - first:
-      213: -6160550067875219486
-    second: Cow3.Run_3
-  - first:
-      213: 4623803734752819197
-    second: Cow3.Run_4
+      213: 9208278680183018817
+    second: Alpha-Water-Test_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cow3.Run_0
+      name: Alpha-Water-Test_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 24
-        width: 673
-        height: 1001
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,92 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 789952e08e87d82d0800000000000000
-      internalID: -3274828415963391609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cow3.Run_1
-      rect:
-        serializedVersion: 2
-        x: 713
-        y: 32
-        width: 673
-        height: 1001
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8d5fea6d478b58d0800000000000000
-      internalID: -2856540772060144244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cow3.Run_2
-      rect:
-        serializedVersion: 2
-        x: 1413
-        y: 36
-        width: 673
-        height: 1001
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2da201a3b77d84e0800000000000000
-      internalID: -1977793047961621206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cow3.Run_3
-      rect:
-        serializedVersion: 2
-        x: 2113
-        y: 22
-        width: 673
-        height: 1001
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e7f94f6a54518aa0800000000000000
-      internalID: -6160550067875219486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cow3.Run_4
-      rect:
-        serializedVersion: 2
-        x: 2813
-        y: 19
-        width: 673
-        height: 1001
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df7f011bffc0b2040800000000000000
-      internalID: 4623803734752819197
+      spriteID: 1459c1d0ca06acf70800000000000000
+      internalID: 9208278680183018817
       vertices: []
       indices: 
       edges: []
@@ -227,11 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cow3.Run_0: -3274828415963391609
-      Cow3.Run_1: -2856540772060144244
-      Cow3.Run_2: -1977793047961621206
-      Cow3.Run_3: -6160550067875219486
-      Cow3.Run_4: 4623803734752819197
+      Alpha-Water-Test_0: 9208278680183018817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
