@@ -17,8 +17,8 @@ public class JuanController : MonoBehaviour
     float rotAngle = 0f;
 
     Rigidbody2D juanRB;
-
-
+    public EnemyController lastE;
+    public float health = 5;
     Vector2 inputVector;
     private void Awake()
     {
@@ -38,7 +38,10 @@ public class JuanController : MonoBehaviour
         inputVector = move.ReadValue<Vector2>();
         accelInput = inputVector.y;
         turnInput = inputVector.x;
-
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void FixedUpdate()
@@ -59,5 +62,14 @@ public class JuanController : MonoBehaviour
         rotAngle -= turnInput * turn;
         juanRB.MoveRotation(rotAngle);
 
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Enemy")
+        {
+            lastE = collision.gameObject.GetComponentInChildren<EnemyController>();
+            health -= lastE.damage;
+            juanRB.AddForce((transform.position - collision.transform.position).normalized * 20,ForceMode2D.Impulse);
+        }
     }
 }

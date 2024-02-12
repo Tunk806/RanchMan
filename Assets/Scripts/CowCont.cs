@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class CowCont : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class CowCont : MonoBehaviour
     public float startleSpeed = 10;
     public float gravSpeed = 1;
     public float retreatDistance;
-
+    public float HP = 2;
+    bool Stole = false;
+    public EnemyController tempEC;
     private void Awake()
     {
         cowBody = GetComponent<Rigidbody2D>();
@@ -26,6 +29,10 @@ public class CowCont : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
             cowBody.rotation = rotate;
         }
+        if (HP <= 0 || Stole == true)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -33,7 +40,18 @@ public class CowCont : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, collision.transform.position, gravSpeed * Time.deltaTime);
         }
-
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            tempEC = collision.gameObject.GetComponentInChildren<EnemyController>();
+            tempEC.thieved = true;
+            tempEC.trigColl.enabled = false;
+            Stole = true;
+            
+            
+        }
     }
 
 
