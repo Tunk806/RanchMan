@@ -7,25 +7,40 @@ public class EnemyController : MonoBehaviour
     public GameObject parent;
     public Transform player;
     public Rigidbody2D badManRB;
+    public bool thieved = false;
+    public GameObject cowFab;
+    public Collider2D trigColl;
     private bool shoot = false;
-    private float speed = .2f;
-    private float pSpeed = .5f;
     public float PlayerDistance = 5;
     public float rotate;
     public float HP = 5;
+    public float damage = 1;
 
 
     private void Awake()
     {
         badManRB = GetComponentInParent<Rigidbody2D>();
+        trigColl = GetComponent<Collider2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
     void Update()
     {
         Vector2 rot = player.position - transform.position;
         rotate = Mathf.Atan2(rot.y, rot.x) * Mathf.Rad2Deg - 90f;
-        if (HP == 0)
+        if (HP == 0 && thieved == true)
         {
+            Destroy(parent.gameObject);
+            Destroy(this.gameObject);
+        }
+        if (thieved == true)
+        {
+            parent.gameObject.tag = "EnemyTake";
+            badManRB.velocity = (transform.position - player.transform.position).normalized * 5;
+            HP = 1;
+        }
+        if (thieved == true && HP == 0)
+        {
+            Instantiate<GameObject>(cowFab, parent.transform.position, Quaternion.identity);
             Destroy(parent.gameObject);
             Destroy(this.gameObject);
         }
@@ -34,12 +49,13 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.tag == "Cow" && Vector2.Distance(transform.position, player.position) > PlayerDistance)
         {
-            badManRB.AddForce((collision.transform.position - transform.position) * speed);
+            badManRB.velocity = (collision.transform.position - transform.position);
         }
         else if (Vector2.Distance(transform.position, player.position) < PlayerDistance)
         {
-            badManRB.AddForce((player.transform.position - transform.position) * pSpeed);
+
             badManRB.rotation = rotate;
+            badManRB.velocity = (player.transform.position - transform.position);
         }
     }
 }
