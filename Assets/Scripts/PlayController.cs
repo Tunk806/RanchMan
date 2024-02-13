@@ -91,7 +91,9 @@ public class PlayController : MonoBehaviour
     {
         int layerMask1 = 1 << 8;
         int layerMask2 = 1 << 2;
+        int layermask3 = 1 << 3;
         int finalMask = layerMask1 | layerMask2;
+        finalMask = finalMask | layermask3;
         finalMask = ~finalMask;
         cylAmmo--;
             RaycastHit2D hit = Physics2D.Raycast(raycastObject.transform.position, fwd, 50, finalMask);
@@ -100,6 +102,10 @@ public class PlayController : MonoBehaviour
                 tempEC = hit.collider.gameObject.GetComponentInChildren<EnemyController>();
                 tempEC.HP--;
             }
+            if (hit.collider != null && hit.collider.gameObject.tag == "Destructible")
+            {
+            Destroy(hit.collider.gameObject);
+            }   
     }
     void Reload()
     {

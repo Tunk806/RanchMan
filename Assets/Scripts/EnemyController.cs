@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
     {
         Vector2 rot = player.position - transform.position;
         rotate = Mathf.Atan2(rot.y, rot.x) * Mathf.Rad2Deg - 90f;
-        if (HP == 0 && thieved == true)
+        if (HP == 0 && thieved == false)
         {
             Destroy(parent.gameObject);
             Destroy(this.gameObject);
