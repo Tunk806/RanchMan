@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Detector
   - EnemyTake
+  - MenuButton
+  - RetryButton
   layers:
   - Default
   - TransparentFX

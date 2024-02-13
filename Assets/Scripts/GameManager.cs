@@ -5,34 +5,62 @@ using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-using Button = UnityEngine.UI.Button;
+using Image = UnityEngine.UI.Image;
 
 public class GameManager : MonoBehaviour
 {
-    public TextMeshProUGUI Lose;
-    public Button retry;
-    public Button menu;
+    public GameObject LoseUI;
+    public GameObject MenuUI;
+    public GameObject canvas;
+    public GameObject WinUI;
     GameObject juan;
     JuanController juanC;
     private void Awake()
     {
-        juan = GameObject.FindGameObjectWithTag("Player");
-        juanC = juan.GetComponent<JuanController>();
-        Lose.enabled = false;retry.gameObject.SetActive(false);menu.gameObject.SetActive(false);
+        DontDestroyOnLoad(this.gameObject);DontDestroyOnLoad(canvas);
+        LoseUI.SetActive(false);WinUI.SetActive(false);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     private void Update()
     {
-        if(juanC.health == 0)
-        {
-            LOSER();
+        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(0))
+        { 
+            if (juanC.health == 0)
+            {
+                LOSER();
+            }
         }
     }
     void LOSER()
     {
-        Lose.enabled = true; retry.gameObject.SetActive(true); menu.gameObject.SetActive(true);
+        LoseUI.SetActive(true);
+    }
+    void WIN()
+    {
+        WinUI.SetActive(true);
     }
     public void Retry()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void Play()
+    {
+        SceneManager.LoadScene(1);
+    
+    }
+    public void Menu()
+    {
         SceneManager.LoadScene(0);
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(0))
+        {
+            juan = GameObject.FindGameObjectWithTag("Player");
+            juanC = juan.GetComponent<JuanController>();
+            MenuUI.SetActive(false);
+            LoseUI.SetActive(false);
+            WinUI.SetActive(false);
+        }
     }
 }
