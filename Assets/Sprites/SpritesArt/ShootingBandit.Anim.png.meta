@@ -226,7 +226,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ShootingBandit.Anim_0: -6279640941973931294
+      ShootingBandit.Anim_1: -5466354708884397101
+      ShootingBandit.Anim_2: -272116947833803881
+      ShootingBandit.Anim_3: -2754748462781315603
+      ShootingBandit.Anim_4: -546073732166273409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
