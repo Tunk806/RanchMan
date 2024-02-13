@@ -15,10 +15,14 @@ public class CowCont : MonoBehaviour
     public float HP = 2;
     bool Stole = false;
     public EnemyController tempEC;
+    public GameManager gameManager;
+    public GameObject gMan;
     private void Awake()
     {
         cowBody = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        gMan = GameObject.FindGameObjectWithTag("GameController");
+        gameManager = gMan.GetComponent<GameManager>();
     }
     void Update()
     {
@@ -49,8 +53,10 @@ public class CowCont : MonoBehaviour
             tempEC.thieved = true;
             tempEC.trigColl.enabled = false;
             Stole = true;
-            
-            
+        }
+        if (collision.gameObject.tag == "Win")
+        {
+            gameManager.WIN();
         }
     }
 

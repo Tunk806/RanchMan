@@ -255,5 +255,5 @@ MonoBehaviour:
   trigColl: {fileID: 0}
   PlayerDistance: 5
   rotate: 0
-  HP: 5
+  HP: 3
   damage: 1

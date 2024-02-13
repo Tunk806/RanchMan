@@ -5,7 +5,8 @@ using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-using Image = UnityEngine.UI.Image;
+using Button = UnityEngine.UI.Button;
+using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,13 +14,18 @@ public class GameManager : MonoBehaviour
     public GameObject MenuUI;
     public GameObject canvas;
     public GameObject WinUI;
+    public Button WinButton;
+    public Button LoseButton;
+    public GameObject EventSystem;
+    public EventSystem ES;
     GameObject juan;
     JuanController juanC;
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);DontDestroyOnLoad(canvas);
+        DontDestroyOnLoad(this.gameObject);DontDestroyOnLoad(canvas);DontDestroyOnLoad(EventSystem);
         LoseUI.SetActive(false);WinUI.SetActive(false);
         SceneManager.sceneLoaded += OnSceneLoaded;
+        ES = EventSystem.GetComponent<EventSystem>();
     }
     private void Update()
     {
@@ -34,10 +40,12 @@ public class GameManager : MonoBehaviour
     void LOSER()
     {
         LoseUI.SetActive(true);
+        ES.SetSelectedGameObject(LoseButton.gameObject);
     }
-    void WIN()
+    public void WIN()
     {
         WinUI.SetActive(true);
+        ES.SetSelectedGameObject(WinButton.gameObject);
     }
     public void Retry()
     {

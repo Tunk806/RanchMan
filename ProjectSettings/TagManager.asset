@@ -10,11 +10,14 @@ TagManager:
   - EnemyTake
   - MenuButton
   - RetryButton
+  - Hazard
+  - Win
+  - Destructible
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Cow
   - Water
   - UI
   - 

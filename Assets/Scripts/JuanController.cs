@@ -18,7 +18,7 @@ public class JuanController : MonoBehaviour
 
     Rigidbody2D juanRB;
     public EnemyController lastE;
-    public float health = 5;
+    public  float health = 5;
     Vector2 inputVector;
     private void Awake()
     {
