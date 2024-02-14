@@ -13,6 +13,7 @@ public class PlayController : MonoBehaviour
 
     public GameObject juan;
     public GameObject raycastObject;
+    public GameObject bullets;
     public EnemyController tempEC;
     public CowCont tempCC;
     public InputAction look;
@@ -79,7 +80,6 @@ public class PlayController : MonoBehaviour
         xyTarget.y = juan.transform.position.y;
         xy.x = xyTarget.x;
         xy.y = xyTarget.y;
-
         transform.position = xy;
     }
     void ApplyLook()
@@ -91,26 +91,34 @@ public class PlayController : MonoBehaviour
     {
         int layerMask1 = 1 << 8;
         int layerMask2 = 1 << 2;
-        int layermask3 = 1 << 3;
         int finalMask = layerMask1 | layerMask2;
-        finalMask = finalMask | layermask3;
         finalMask = ~finalMask;
         cylAmmo--;
             RaycastHit2D hit = Physics2D.Raycast(raycastObject.transform.position, fwd, 50, finalMask);
-            if (hit.collider != null && hit.collider.gameObject.tag == "Enemy" || (hit.collider != null && hit.collider.gameObject.tag == "EnemyTake"))
+            if (hit.collider != null && hit.collider.gameObject.tag == "Enemy" || hit.collider != null && hit.collider.gameObject.tag == "EnemyTake")
             {
                 tempEC = hit.collider.gameObject.GetComponentInChildren<EnemyController>();
                 tempEC.HP--;
             }
             if (hit.collider != null && hit.collider.gameObject.tag == "Destructible")
             {
+            Instantiate(bullets, hit.collider.gameObject.transform.position , Quaternion.identity);
             Destroy(hit.collider.gameObject);
-            }   
+            }
+
     }
     void Reload()
     {
         cylAmmo = 6;
         ammo -= 6;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Destructible")
+        {
+            Destroy(collision.gameObject);
+            ammo += 3;
+        }
     }
 }
     
