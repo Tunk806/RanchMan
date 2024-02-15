@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 47c8d3c9d22cd954ca0a1f439e1b92d9
+guid: ead54f47fc9f67b4ea235c07e40862a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3663761578151886962
-    second: River_0
+      213: -3337038689812066966
+    second: pixil-frame-0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: River_0
+      name: pixil-frame-0_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,14 +114,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8f38809144b72dc0800000000000000
-      internalID: -3663761578151886962
+      spriteID: a6d4404fdf470b1d0800000000000000
+      internalID: -3337038689812066966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_1
+      name: pixil-frame-0_1
       rect:
         serializedVersion: 2
         x: 64
@@ -135,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f86b83169f8021b42acfdcbc9f147c7b
-      internalID: 337181161
+      spriteID: a71ac9b7e16e27c40bb4e785c5236922
+      internalID: -753092032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_2
+      name: pixil-frame-0_2
       rect:
         serializedVersion: 2
         x: 128
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87d1a535a609c7745a3085afc9e5f55d
-      internalID: 379801279
+      spriteID: 4d0fb3af322c99f469ee7f7c28f8b98b
+      internalID: -6928949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_3
+      name: pixil-frame-0_3
       rect:
         serializedVersion: 2
         x: 0
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c35625f3a77b8ff44a367889165523aa
-      internalID: 1821452019
+      spriteID: d07ab0e108c431a4a8c3ef8edd923365
+      internalID: -1352189362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_4
+      name: pixil-frame-0_4
       rect:
         serializedVersion: 2
         x: 64
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 011858e7716eaec4bb4968169087f6cf
-      internalID: 812125353
+      spriteID: a3f304d24c878b24496e1e388396b0cb
+      internalID: -814467302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_5
+      name: pixil-frame-0_5
       rect:
         serializedVersion: 2
         x: 128
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 190c4994d3a03844ab05d995679bbeed
-      internalID: -402513308
+      spriteID: e339170520a02a3459dcb99c1aeebad9
+      internalID: 1506448236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_6
+      name: pixil-frame-0_6
       rect:
         serializedVersion: 2
         x: 0
@@ -240,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3378a64aecf3e8f40be7c7faa0e40dc0
-      internalID: -1646712005
+      spriteID: b820871976d5e2e499ba35f3f26c8179
+      internalID: 1903272882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_7
+      name: pixil-frame-0_7
       rect:
         serializedVersion: 2
         x: 64
@@ -261,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b070e382c36d04992bba061ee20199
-      internalID: 1522925317
+      spriteID: 47f8c72437cacff429a016ba398ebea7
+      internalID: 200307830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: River_8
+      name: pixil-frame-0_8
       rect:
         serializedVersion: 2
         x: 128
@@ -282,8 +282,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b47fc7e1802bf64448f58ce9876a5d9c
-      internalID: -1437927189
+      spriteID: 3a5221a646020654ca88cc81069f8cb0
+      internalID: 1250568079
       vertices: []
       indices: 
       edges: []
@@ -291,7 +291,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2ad1b538f7cef9344b8b51d0f3b0c078
+    spriteID: e41b1e22fc1dcbf4fb8d7b59b9efbbdc
     internalID: 0
     vertices: []
     indices: 
@@ -299,15 +299,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      River_0: -3663761578151886962
-      River_1: 337181161
-      River_2: 379801279
-      River_3: 1821452019
-      River_4: 812125353
-      River_5: -402513308
-      River_6: -1646712005
-      River_7: 1522925317
-      River_8: -1437927189
+      pixil-frame-0_0: -3337038689812066966
+      pixil-frame-0_1: -753092032
+      pixil-frame-0_2: -6928949
+      pixil-frame-0_3: -1352189362
+      pixil-frame-0_4: -814467302
+      pixil-frame-0_5: 1506448236
+      pixil-frame-0_6: 1903272882
+      pixil-frame-0_7: 200307830
+      pixil-frame-0_8: 1250568079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

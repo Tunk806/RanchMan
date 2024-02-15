@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2a888dfb2db57014aa703d3441f4cdd5
+guid: 7a1c3a60f910415489a9134e3d56f791
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8431755187220857656
-    second: Valley_0
+      213: 4483504832982471387
+    second: pixil-frame-0 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Valley_0
+      name: pixil-frame-0 (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,14 +114,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8334b5f5bac930570800000000000000
-      internalID: 8431755187220857656
+      spriteID: bd2daa614eb983e30800000000000000
+      internalID: 4483504832982471387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_1
+      name: pixil-frame-0 (1)_1
       rect:
         serializedVersion: 2
         x: 64
@@ -135,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f1bceff867add4bb12ffc4e263fc47
-      internalID: 546954728
+      spriteID: ffe6445c619d34749ab0c2fb411c970d
+      internalID: -800293252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_2
+      name: pixil-frame-0 (1)_2
       rect:
         serializedVersion: 2
         x: 128
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b4f608e5bf946b40b607011727d1b74
-      internalID: -1472096249
+      spriteID: 7d28a49b85593b746ad4c90297a581ec
+      internalID: -1677521916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_3
+      name: pixil-frame-0 (1)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f2715eafd27f184a856c06de2b4a883
-      internalID: -253531041
+      spriteID: f5dd32279446e104b934cfad083c7de1
+      internalID: -2099622603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_4
+      name: pixil-frame-0 (1)_4
       rect:
         serializedVersion: 2
         x: 64
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 564eb7ba51a66ad469f3ff63984b7fdf
-      internalID: 1121322627
+      spriteID: 0fe46941c471e5d41a31948404e60686
+      internalID: -1057218615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_5
+      name: pixil-frame-0 (1)_5
       rect:
         serializedVersion: 2
         x: 128
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9c64dff3f993ea44ab01fe2cb036c16
-      internalID: -164862588
+      spriteID: a3e692c15d9057b43b5a035def268ca4
+      internalID: 508681174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_6
+      name: pixil-frame-0 (1)_6
       rect:
         serializedVersion: 2
         x: 0
@@ -240,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd1d083936a7633448a658b367afd61a
-      internalID: 544016557
+      spriteID: 17d8cc8852f7a7848b0813f8e5c84f1e
+      internalID: -918361378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_7
+      name: pixil-frame-0 (1)_7
       rect:
         serializedVersion: 2
         x: 64
@@ -261,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9b1478dd9c19f5498dce18711a03989
-      internalID: 1327773346
+      spriteID: 01eae83d9a3af4d41bc58f4fabb18038
+      internalID: -373412674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley_8
+      name: pixil-frame-0 (1)_8
       rect:
         serializedVersion: 2
         x: 128
@@ -282,8 +282,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fb383c0375884b4c9c12a47a418392b
-      internalID: -1150125829
+      spriteID: 10d063f6c42635f4ea6eb0d2991b22fe
+      internalID: 1483939998
       vertices: []
       indices: 
       edges: []
@@ -291,7 +291,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fdcf5a9e3c4f68a4b8e405da7ab992b3
+    spriteID: f42473e1a136d194da889efaffc38fd9
     internalID: 0
     vertices: []
     indices: 
@@ -299,15 +299,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Valley_0: 8431755187220857656
-      Valley_1: 546954728
-      Valley_2: -1472096249
-      Valley_3: -253531041
-      Valley_4: 1121322627
-      Valley_5: -164862588
-      Valley_6: 544016557
-      Valley_7: 1327773346
-      Valley_8: -1150125829
+      pixil-frame-0 (1)_0: 4483504832982471387
+      pixil-frame-0 (1)_1: -800293252
+      pixil-frame-0 (1)_2: -1677521916
+      pixil-frame-0 (1)_3: -2099622603
+      pixil-frame-0 (1)_4: -1057218615
+      pixil-frame-0 (1)_5: 508681174
+      pixil-frame-0 (1)_6: -918361378
+      pixil-frame-0 (1)_7: -373412674
+      pixil-frame-0 (1)_8: 1483939998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
