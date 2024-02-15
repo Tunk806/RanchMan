@@ -50,9 +50,12 @@ public class CowCont : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             tempEC = collision.gameObject.GetComponentInChildren<EnemyController>();
-            tempEC.thieved = true;
-            tempEC.trigColl.enabled = false;
-            Stole = true;
+            if (tempEC.Chase == false)
+            {
+                tempEC.thieved = true;
+                tempEC.trigColl.enabled = false;
+                Stole = true;
+            }
         }
         if (collision.gameObject.tag == "Win")
         {

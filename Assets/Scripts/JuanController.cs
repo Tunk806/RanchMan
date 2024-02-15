@@ -8,14 +8,12 @@ public class JuanController : MonoBehaviour
     PlayerInputs playInput;
     public float accel = 30f;
     public float turn = 3.5f;
-
+    public PlayController controller;
+    public GameObject play;
     public InputAction move;
-
-
     float accelInput = 0f;
     float turnInput = 0f;
     float rotAngle = 0f;
-
     Rigidbody2D juanRB;
     public EnemyController lastE;
     public  float health = 5;
@@ -24,12 +22,13 @@ public class JuanController : MonoBehaviour
     {
         juanRB = GetComponent<Rigidbody2D>();
         playInput = new PlayerInputs();
+        play = GameObject.FindGameObjectWithTag("GUY");
+        controller = play.GetComponent<PlayController>();
     }
 
     private void OnEnable()
     {
         move = playInput.Player.Move;
-
         move.Enable();
     }
 
@@ -65,11 +64,24 @@ public class JuanController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Enemy")
+        if (collision.collider.tag == "Enemy")
         {
             lastE = collision.gameObject.GetComponentInChildren<EnemyController>();
             health -= lastE.damage;
-            juanRB.AddForce((transform.position - collision.transform.position).normalized * 20,ForceMode2D.Impulse);
+            juanRB.AddForce((transform.position - collision.transform.position).normalized * 20, ForceMode2D.Impulse);
+        }
+        if (collision.gameObject.tag == "Destructible")
+        {
+                Destroy(collision.gameObject);
+                controller.ammo += 3;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bullets")
+        {
+            Destroy(collision.gameObject);
+            controller.ammo += 3;
         }
     }
 }

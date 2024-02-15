@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,26 +96,39 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Horse.idle 1_0
+      name: Horse.idle_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 3
-        width: 188
-        height: 713
+        x: 119
+        y: 18
+        width: 186
+        height: 711
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bc5fb5f00ef902880800000000000000
-      internalID: -8637728300617435701
+      spriteID: 9bf6dda8f1598ac40801b275b52509c1
+      internalID: 644246225
       vertices: []
       indices: 
       edges: []
@@ -123,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cd25dfe68780e944fa19f86111ebd996
     internalID: 0
     vertices: []
     indices: 
@@ -131,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Horse.idle 1_0: -8637728300617435701
+      Horse.idle_0: 644246225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

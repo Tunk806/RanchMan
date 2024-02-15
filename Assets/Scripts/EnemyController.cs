@@ -8,9 +8,9 @@ public class EnemyController : MonoBehaviour
     public Transform player;
     public Rigidbody2D badManRB;
     public bool thieved = false;
+    public bool Chase;
     public GameObject cowFab;
-    public Collider2D trigColl;
-    private bool shoot = false;
+    public CircleCollider2D trigColl;
     private float PlayerDistance = 5;
     public float rotate;
     public float HP = 5;
@@ -21,8 +21,11 @@ public class EnemyController : MonoBehaviour
 
     private void Awake()
     {
-        badManRB = GetComponentInParent<Rigidbody2D>();
-        trigColl = GetComponent<Collider2D>();
+        if (Chase == false)
+            badManRB = GetComponentInParent<Rigidbody2D>();
+        else
+            badManRB = GetComponent<Rigidbody2D>();
+        trigColl = GetComponent<CircleCollider2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
     void Update()
@@ -54,14 +57,18 @@ public class EnemyController : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Cow")
+        if (collision.tag == "Cow" && Chase == false)
         {
             badManRB.velocity = (collision.transform.position - transform.position).normalized * 2.5f;
         }
-        else if (Vector2.Distance(transform.position, player.position) < PlayerDistance && chaseTimer >= 0)
+        else if (Vector2.Distance(transform.position, player.position) < PlayerDistance && Chase == false && chaseTimer >= 0)
         {
             badManRB.velocity = (player.transform.position - transform.position).normalized * 3;
             chaseTimer -= Time.deltaTime;
+        }
+        if (collision.tag == "Player" && Chase == true)
+        {
+            badManRB.velocity = (player.transform.position - transform.position).normalized * 5;
         }
     }
 }

@@ -8,9 +8,7 @@ using Unity.VisualScripting;
 public class PlayController : MonoBehaviour
 {
     PlayerInputs playInput;
-
     Rigidbody2D myRB;
-
     public GameObject juan;
     public GameObject raycastObject;
     public GameObject bullets;
@@ -19,14 +17,12 @@ public class PlayController : MonoBehaviour
     public InputAction look;
     public InputAction fire;
     public InputAction reload;
-
     public float turn = 3.5f;
     float lookInput;
     float rotAngle;
     float cylAmmo = 6;
-    float ammo = 36;
+    public float ammo = 36;
     public float health = 1;
-
     private Vector3 xy;
     private Vector2 xyTarget;
     Vector2 inputVector;
@@ -37,6 +33,7 @@ public class PlayController : MonoBehaviour
     {
         playInput = new PlayerInputs();
         myRB = GetComponent<Rigidbody2D>();
+        juan = GameObject.FindGameObjectWithTag("Player");
         xy.x = transform.position.x;
         xy.y = transform.position.y;
         xy.z = transform.position.z;
@@ -111,14 +108,6 @@ public class PlayController : MonoBehaviour
     {
         cylAmmo = 6;
         ammo -= 6;
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Destructible")
-        {
-            Destroy(collision.gameObject);
-            ammo += 3;
-        }
     }
 }
     
