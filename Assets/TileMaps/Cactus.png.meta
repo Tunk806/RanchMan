@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c82570e2dc7d3aa4aa9c4cc611deaf8b
+guid: 2f581048dbd0c5e4dbe2b7bce7632cb3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8274149829583092128
-    second: Valley-Test_0
+      213: 7873444928579934181
+    second: Cactus_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Valley-Test_0
+      name: Cactus_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,14 +114,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 066475d71905c2d80800000000000000
-      internalID: -8274149829583092128
+      spriteID: 5e79b9e7278144d60800000000000000
+      internalID: 7873444928579934181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_1
+      name: Cactus_1
       rect:
         serializedVersion: 2
         x: 64
@@ -135,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 974b84542b00491429e9d81a747cd991
-      internalID: 1182754594
+      spriteID: b7073323ac20bfa4382bc8a8b90e160d
+      internalID: -263749935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_2
+      name: Cactus_2
       rect:
         serializedVersion: 2
         x: 128
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb9e9a63972eaf147a3783754682b670
-      internalID: -717323462
+      spriteID: 55b7f89cb53b78145827ead7059d94c8
+      internalID: -387225845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_3
+      name: Cactus_3
       rect:
         serializedVersion: 2
         x: 0
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01da67476ba66134dbb1249373ec5d69
-      internalID: 1796992960
+      spriteID: 2b3e1a6779f205544afa069cb8969641
+      internalID: 931809074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_4
+      name: Cactus_4
       rect:
         serializedVersion: 2
         x: 64
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec77c6c85a6e99540b0df0efc5b8353c
-      internalID: 123994887
+      spriteID: 089ff27f9ae0cb742936993f2972c9eb
+      internalID: 1776129609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_5
+      name: Cactus_5
       rect:
         serializedVersion: 2
         x: 128
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3e1b8e54a451264f8f40b4c2f70cd5f
-      internalID: -1922146270
+      spriteID: 10e5a094db4a7734b8fcdba283184010
+      internalID: -2130408953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_6
+      name: Cactus_6
       rect:
         serializedVersion: 2
         x: 0
@@ -240,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 398683e0298043c488ee84891319e74d
-      internalID: 894892452
+      spriteID: f491f6e1e608fe643a15b2e44f13a0d9
+      internalID: -22271530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_7
+      name: Cactus_7
       rect:
         serializedVersion: 2
         x: 64
@@ -261,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38460b1d7534f6c4490e2d81a996b67a
-      internalID: 1368700238
+      spriteID: 66d9c035c300ef043bc71fca102067b5
+      internalID: 733937156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valley-Test_8
+      name: Cactus_8
       rect:
         serializedVersion: 2
         x: 128
@@ -282,8 +282,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 350e1931932d5a241a419d9b859225c8
-      internalID: -1838834317
+      spriteID: 5a6484e024027ba42bfb9171e3162906
+      internalID: -690485681
       vertices: []
       indices: 
       edges: []
@@ -291,7 +291,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cfccc6750e1032e479fe8fc5027c8856
+    spriteID: 9c55e7537230ed94f88df67d478164e7
     internalID: 0
     vertices: []
     indices: 
@@ -299,15 +299,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Valley-Test_0: -8274149829583092128
-      Valley-Test_1: 1182754594
-      Valley-Test_2: -717323462
-      Valley-Test_3: 1796992960
-      Valley-Test_4: 123994887
-      Valley-Test_5: -1922146270
-      Valley-Test_6: 894892452
-      Valley-Test_7: 1368700238
-      Valley-Test_8: -1838834317
+      Cactus_0: 7873444928579934181
+      Cactus_1: -263749935
+      Cactus_2: -387225845
+      Cactus_3: 931809074
+      Cactus_4: 1776129609
+      Cactus_5: -2130408953
+      Cactus_6: -22271530
+      Cactus_7: 733937156
+      Cactus_8: -690485681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
