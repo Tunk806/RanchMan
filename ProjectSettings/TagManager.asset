@@ -16,6 +16,18 @@ TagManager:
   - Bullets
   - GUY
   - AmmoText
+  - Cyl1
+  - Cyl2
+  - Cyl3
+  - Cyl4
+  - Cyl5
+  - Cyl6
+  - B1
+  - B2
+  - B3
+  - B4
+  - B5
+  - B6
   layers:
   - Default
   - TransparentFX

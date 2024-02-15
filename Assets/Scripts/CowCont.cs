@@ -61,6 +61,10 @@ public class CowCont : MonoBehaviour
         {
             gameManager.WIN();
         }
+        if (collision.gameObject.tag == "Hazard")
+        {
+            Destroy(gameObject);
+        }
     }
 
 

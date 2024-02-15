@@ -17,12 +17,14 @@ public class PlayController : MonoBehaviour
     public InputAction look;
     public InputAction fire;
     public InputAction reload;
+    public LineRenderer doinLines;
     public float turn = 3.5f;
     float lookInput;
     float rotAngle;
-    float cylAmmo = 6;
+    public float cylAmmo = 6;
     public float ammo = 36;
     public float health = 1;
+    float bulletLife = 1;
     private Vector3 xy;
     private Vector2 xyTarget;
     Vector2 inputVector;
@@ -34,6 +36,8 @@ public class PlayController : MonoBehaviour
         playInput = new PlayerInputs();
         myRB = GetComponent<Rigidbody2D>();
         juan = GameObject.FindGameObjectWithTag("Player");
+        doinLines = GetComponent<LineRenderer>();
+        doinLines.material = new Material(Shader.Find("Sprites/Default"));
         xy.x = transform.position.x;
         xy.y = transform.position.y;
         xy.z = transform.position.z;
@@ -55,7 +59,6 @@ public class PlayController : MonoBehaviour
         AMMO.SetText(cylAmmo + "/" + ammo);
         if (fire.triggered && cylAmmo > 0)
         {
-            Debug.DrawRay(raycastObject.transform.position, fwd * 50, Color.red, 1);
             Shoot();
         }
         if (reload.triggered && ammo >= 6)
@@ -65,6 +68,12 @@ public class PlayController : MonoBehaviour
         if (juan.IsDestroyed())
         {
             Destroy(this.gameObject);
+        }
+        bulletLife -= Time.deltaTime;
+        if(bulletLife < 0)
+        {
+            doinLines.positionCount = 0;
+            
         }
     }
     private void FixedUpdate()
@@ -102,7 +111,10 @@ public class PlayController : MonoBehaviour
             Instantiate(bullets, hit.collider.gameObject.transform.position , Quaternion.identity);
             Destroy(hit.collider.gameObject);
             }
-
+        doinLines.positionCount = 2;
+        doinLines.SetPosition(0,raycastObject.transform.position);
+        doinLines.SetPosition(1, fwd.normalized * 50);
+        bulletLife = 1;
     }
     void Reload()
     {

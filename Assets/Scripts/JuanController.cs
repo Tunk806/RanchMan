@@ -75,6 +75,11 @@ public class JuanController : MonoBehaviour
                 Destroy(collision.gameObject);
                 controller.ammo += 3;
         }
+        if (collision.gameObject.tag == "Hazard")
+        {
+            Destroy(play.gameObject);
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -60,15 +60,20 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void Next()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(0))
         {
-            juan = GameObject.FindGameObjectWithTag("Player");
-            juanC = juan.GetComponent<JuanController>();
             MenuUI.SetActive(false);
             LoseUI.SetActive(false);
             WinUI.SetActive(false);
+            juan = GameObject.FindGameObjectWithTag("Player");
+            juanC = juan.GetComponent<JuanController>();
+
         }
     }
 }
